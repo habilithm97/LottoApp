@@ -9,6 +9,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashSet;
 import java.util.Random;
 
@@ -74,10 +75,10 @@ public class MainActivity extends AppCompatActivity {
             }
         }
         arrayList.addAll(lottoSet); // HashSet을 ArrayList에 담기
+        Collections.sort(arrayList); // ArrayList를 오름차순 정렬 -> 한자리수만 정렬이 안 되는 문제 발생
+
         for(int i = 0; i < arrayList.size(); i++) {
-            if(i < 5) { // 1, 2, 3, 4, 5번째 숫자
-                ballList.append(arrayList.get(i) + ",    ");
-            } else if(i == 5) { // 6번째 숫자
+            if(i < 6) {
                 ballList.append(arrayList.get(i) + "    ");
             } else {
                 ballList.append(" \n 보너스 번호 : " + arrayList.get(i));
