@@ -10,7 +10,7 @@
         android:orientation="horizontal" >
 
         <TextView
-            android:id="@+id/tv1"
+            android:id="@+id/ball1"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:gravity="center"
@@ -20,7 +20,7 @@
             android:text="-"/>
 
         <TextView
-            android:id="@+id/tv2"
+            android:id="@+id/ball2"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:gravity="center"
@@ -30,7 +30,7 @@
             android:text="-"/>
 
         <TextView
-            android:id="@+id/tv3"
+            android:id="@+id/ball3"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:gravity="center"
@@ -40,7 +40,7 @@
             android:text="-"/>
 
         <TextView
-            android:id="@+id/tv4"
+            android:id="@+id/ball4"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:gravity="center"
@@ -50,7 +50,7 @@
             android:text="-"/>
 
         <TextView
-            android:id="@+id/tv5"
+            android:id="@+id/ball5"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:gravity="center"
@@ -60,7 +60,7 @@
             android:text="-"/>
 
         <TextView
-            android:id="@+id/tv6"
+            android:id="@+id/ball6"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:gravity="center"
@@ -77,4 +77,18 @@
         android:layout_height="wrap_content"
         android:text="로또 추첨 테스트" />
 
+    <TextView
+        android:id="@+id/ballList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/purple_200"
+        android:text="-"
+        android:gravity="center"
+        android:layout_marginTop="3dp" />
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="로또 추첨 테스트2" />
 </LinearLayout>
